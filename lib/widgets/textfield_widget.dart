@@ -41,11 +41,11 @@ class TextFieldWidget extends StatefulWidget {
     this.suffix,
     this.length,
     this.hintColor = Colors.black,
-    this.borderColor = Colors.transparent,
+    this.borderColor = Colors.grey,
     this.showEye = false,
     this.enabled = true,
     this.color = Colors.black,
-    this.radius = 100,
+    this.radius = 10,
     this.hasValidator = true,
     this.textCapitalization = TextCapitalization.sentences,
     this.inputType = TextInputType.text,
@@ -86,11 +86,11 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                         icon: widget.isObscure!
                             ? const Icon(
                                 Icons.visibility,
-                                color: secondary,
+                                color: Colors.black,
                               )
                             : const Icon(
                                 Icons.visibility_off,
-                                color: secondary,
+                                color: Colors.black,
                               ))
                     : const SizedBox()),
             hintText: widget.hint,
@@ -98,7 +98,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
             label: TextWidget(
               text: widget.label,
               fontSize: 18,
-              color: secondary,
+              color: Colors.black,
             ),
             hintStyle: const TextStyle(
               fontFamily: 'Regular',
