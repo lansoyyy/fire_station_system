@@ -1,3 +1,4 @@
+import 'package:fire_station_system/screens/home_screen.dart';
 import 'package:fire_station_system/widgets/button_widget.dart';
 import 'package:fire_station_system/widgets/text_widget.dart';
 import 'package:fire_station_system/widgets/textfield_widget.dart';
@@ -139,7 +140,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     ButtonWidget(
                       width: 150,
                       label: 'Login',
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => const HomeScreen()));
+                      },
                     ),
                     TextButton(
                       onPressed: () {},
@@ -230,7 +234,10 @@ class _LoginScreenState extends State<LoginScreen> {
               ButtonWidget(
                 width: 300,
                 label: 'Register',
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (context) => const HomeScreen()));
+                },
               ),
               const SizedBox(
                 height: 10,
